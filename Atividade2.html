@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>2015.03.17</title>
+	</head>
+	<body>
+		<section>
+			<table border="1">
+				<caption>Terça</caption>
+				<thead>
+					<tr>
+						<td>Aula</td>
+						<td>Horário</td>
+						<td>Presença</td>	
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Química</td>
+						<td>7h00</td>
+						<td>Todos</td>
+					</tr>
+					<tr>
+						<td>LAW</td>
+						<td>8h40</td>
+						<td>Todos</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<br>
+			
+			<table border="1">
+					<thead>
+						<tr>
+							<th colspan="2"> Aulas</th>
+						</tr>
+						<tr>
+							<td>Ano</td>
+							<td>Disciplinas</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="4">3º</td>
+							<td>Química</td>
+						</tr>
+						<tr>
+							<td>Física</td>
+						</tr>
+						<tr>
+							<td>Matemática</td>
+						</tr>
+						<tr>
+							<td>LAW</td>
+						</tr>
+					</tbody>
+			</table>
+			
+			<br>
+			
+			<table border="1">
+				<thead>
+					<tr>
+						<th colspan="2">Turmas</th>
+						<th>Total</th>
+					</tr>
+					<tr>
+						<th rowspan="2">FG</th>
+						<td>Específica</td>
+						<td>10</td>
+					</tr>
+					<tr>
+						<td>Comum</td>
+						<td rowspan="2">8</td>
+					</tr>
+					<tr>
+						<th rowspan="2">Tec</th>
+						<td>Comum</td>
+					</tr>
+					<tr>
+						<td>Específica</td>
+						<td>9</td>
+					</tr>
+				</thead>
+			</table>
+			
+			<a href="http://www.google.com.br">Google</a>
+			<a href="info.html">Informação</a>
+			
+			<br>
+			<br>
+
+<form method="POST" action = "salvar.php ">	
+
+		<fieldset>
+			<legend> CADASTRO </legend>
+			<label for = "nome"> Nome: </label>
+			<input type = "text" name  = "nome" id "nome" size = "10" maxlength = "10" >
+			
+			<br>
+			<br>
+			
+			<label for = "sugestao"> Sugestao: </label>
+			<textarea = name ="sugestao" id ="sugestao" cols ="30" rows = "2"> </textarea>
+			
+			<br>
+			<br>
+			
+			Sexo <label for = "Masc"> masculino </label>
+			<input type = "radio" name = "sexo" id = "masc" value = "M">
+			<label for = "fem"> feminino </label>
+			<input type = "radio" name = "sexo" id = "fem" value = "F" >
+			
+			<br>
+			<br>
+			
+			<input type = "checkbox" name = "ano[]" value = "1" id "um">
+			<label for = "um">1ºano </label>		
+			<input type = "checkbox" name = "ano[]" value = "2" id "dois">
+			<label for = "dois">2ºano </label>			
+		   <input type = "checkbox" name = "ano[]" value = "3" id "tres">
+			<label for = "tres">3ºano </label>
+			
+			<br>
+			<br>
+			
+			<select name = "estado">
+			<option value = "MG">MINAS GERAIS </option>
+			<option value = "SP">SAO PAULO </option>
+			</select>
+			
+			<br>
+			<br>
+			
+			<select name = "estado[]" multiple = "multiple">
+			<option value = "MG">MINAS GERAIS </option>
+			<option value = "SP">SAO PAULO </option>
+			
+			<br>
+			<br>
+			
+			</select>
+		</fieldset>	
+</form>		
+		</section>
+	</body>
+</html>
